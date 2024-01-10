@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "RobotoMono";
+	src: url(fonts/RobotoMono.ttf) format("truetype");
+}
+
+body {
+    font-family: "RobotoMono", Arial, Helvetica, sans-serif;
+    background:url("img/Background.jpg");
+    background-size: cover; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* LINK MENU */
+
+.link-menu {
+    background: #131217;
+    height: 40px;
+}
+
+.link-menu ul {
+    width: 1440px;
+    display: flex;
+    margin: 0px auto;
+    padding-top: 10px;
+    overflow: hidden; /* Použítí místo clearfix */
+}
+
+.link-menu ul li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 12px;
+    float: left;
+    margin-right: 50px;  
+}
+
+.link-menu ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.link-menu ul li a:hover {
+    color: #1274E8;
+    text-decoration: none;
+}
+
+/* NAVIGACE MENU */
+
+.navigace-menu {
+    background: #0C0C0C;
+    height: 75px;
+}
+
+.navigace-menu ul {
+    width: 1440px;
+    margin: 0px auto;
+    overflow: hidden; /* Použítí místo clearfix */
+}
+
+.navigace-menu ul li {
+    list-style-type: none;
+    margin-right: 50px;
+    float: left;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.navigace-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.menu:hover {
+    color: #1274E8;
+    text-decoration: none;
+}
+
+.menu.home-link {
+    color: #1274E8; 
+}
+
+/* MAIN */ 
+
+/* TEXTOVÁ ČÁST */
+
+.událost ul {
+    width: 1440px;
+    display: flex;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+.událost ul li {
+    text-align: left;
+    float: left;
+    margin-right: 10px;
+    margin-top: 30px;
+    font-size: 12px;
+    overflow: hidden; /* 'overflow: hidden', aby rám zůstal pevný */
+}
+
+.událost ul li p {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.událost ul li p:hover {
+    color: #1274E8;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+}
+
+.nadpis-události {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-top: 45px;
+    margin-left: -65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.nadpis-události:hover {
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    margin-top: 45px;
+    margin-left: -65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+/* IMG ČÁST */
+
+.událost ul li img {
+    width: 300px; 
+    height: auto; 
+    filter: grayscale(30%);
+    z-index: 2;
+    transition: transform 0.8s, filter 0.8s; 
+}
+
+.událost ul li:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05); 
+}
+
+.událost ul li:not(:hover) img {
+    filter: grayscale(30%);
+    transform: scale(1); 
+}
+
+/* BUTTONS */
+
+.button1, .button2, .button3, .button4 {
+    position: absolute;
+    left: 1350px;
+}
+
+.button1 img, .button2 img, .button3 img, .button4 img {
+    width: 25%;   
+}
+
+.button1 {
+    bottom: 535px; 
+}
+
+.button2 {
+    bottom: 335px; 
+}
+
+.button3 {
+    bottom: 135px; 
+}
+
+.button4 {
+    bottom: -65px; 
+}
+
+/* INFORMACE MENU */
+
+footer {
+    background: #0C0C0C;
+    padding: 0;
+    height: 90px;
+}
+
+.informace-menu {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-top: 40px;
+}
+
+.informace-menu ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.informace-menu ul li {
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.informace-menu ul li p {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.informace-menu ul li a {
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.informace-menu ul li a:hover {
+    color: #1274E8;
+    text-decoration: none;
+}

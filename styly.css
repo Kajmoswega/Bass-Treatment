@@ -1,0 +1,193 @@
+
+/* PRO CELOU STRÁNKU */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "RobotoMono";
+	src: url(fonts/RobotoMono.ttf) format("truetype");
+}
+
+body {
+    font-family: "RobotoMono", Arial, Helvetica, sans-serif;
+    background:url("img/MainB.jpg");
+    background-size: cover; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* LINK MENU */
+
+.link-menu {
+    background: #131217;
+    height: 40px;
+}
+
+.link-menu ul {
+    width: 1440px;
+    display: flex;
+    margin: 0px auto;
+    padding-top: 10px;
+    overflow: hidden; /* Použítí místo clearfix */
+}
+
+.link-menu ul li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 12px;
+    float: left;
+    margin-right: 50px;  
+}
+
+.link-menu ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.link-menu ul li a:hover {
+    color: #1274E8;
+    text-decoration: none;
+}
+
+/* NAVIGACE MENU */
+
+.navigace-menu {
+    background: #0C0C0C;
+    height: 75px;
+}
+
+.navigace-menu ul {
+    width: 1440px;
+    margin: 0px auto;
+    overflow: hidden; /* Použítí místo clearfix */
+}
+
+.navigace-menu ul li {
+    list-style-type: none;
+    margin-right: 50px;
+    float: left;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.navigace-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.menu:hover {
+    color: #1274E8;
+    text-decoration: none;
+}
+
+.menu.home-link {
+    color: #1274E8; 
+}
+
+/* MAIN TEXT */
+
+.main-text {
+    display: flex;
+    height: 50vh;
+    padding: 160px;
+    align-items: center;
+}
+
+.other-text {
+    display: flex;
+    padding: 160px;
+    margin-top: -200px;
+    align-items: center;
+}
+
+/* MAIN TEXT SECTION */
+
+.main-text-section h1 {
+    font-size: 90px;
+    color: #fff;
+}
+
+.main-text-section h1 span {
+    display: block; 
+    margin-bottom: -30px;
+}
+
+/* OTHER TEXT SECTION */
+
+.other-text-section p {
+    font-size: 30px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.other-text-section p span {
+    display: block;  
+}
+
+.other-text-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1274E8;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* INFORMACE MENU */
+
+footer {
+    background: #0C0C0C;
+    padding: 0;
+    height: 90px;
+}
+
+.informace-menu {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-top: -10px;
+}
+
+.informace-menu ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.informace-menu ul li {
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.informace-menu ul li p {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.informace-menu ul li a {
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.informace-menu ul li a:hover {
+    color: #1274E8;
+    text-decoration: none;
+}
+
+
